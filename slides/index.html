@@ -25,6 +25,7 @@
         <script>
             document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
         </script>
+        <script src="./js/stream.js"></script>
 
         <!--[if lt IE 9]>
         <script src="lib/js/html5shiv.js"></script>
@@ -66,17 +67,20 @@
                         example RWD site
                         interectivity:
                             touch
-                            leap (amazon fire phone)
+
 
                         -->
                     </section>
-
                     <section>
                         <h2>Complex UX</h2>
                         <p class="blue"><small>Rich data presentation</small></p>
 
                     </section>
-
+                    <section>
+                        <h2>leap</h2>
+                        <p class="blue"><small>gesture control device</small></p>
+                        <a href="./examples/leap/cube-demo/cube.html">DEMO</a>
+                    </section>
                     <section>
                         <h2>Complex UX</h2>
                         <p class="blue"><small>Rich data presentation</small></p>
@@ -221,6 +225,7 @@
                     <section>
                         <h2>leap</h2>
                         <p class="blue"><small>gesture control device</small></p>
+                        <a href="./examples/bone-hand/index.html">DEMO</a>
                     </section>
                     <section>
                         <h2>DAWN</h2>
@@ -257,15 +262,7 @@
                     </section>
                     <section>
                         <h2>Web API Demo</h2>
-                        <script type="text/javascript">
-                            navigator.webkitGetUserMedia({audio: true, video: true}, function(stream) {
-                                var video = document.querySelector('video');
-                                video.src = window.URL.createObjectURL(stream);
-                            }, function(e) {
-                                console.log(e);
-                            });
-                        </script>
-                        <video id="camera-demo" width="750" height="400" controls loop="">
+                        <video id="camera-demo" width="750" height="400" autoplay>
                     </section>
                     <section>
                         <h2>CSS effects</h2>
